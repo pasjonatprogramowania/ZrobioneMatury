@@ -89,4 +89,3 @@ import math
 #         pomciag = 1
 #     print(ciag)
 #
-

@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+int hornetI(int n, int x){
+
+	int w,a;
+	cout<<"Podaj wsp. przy x^"<<n<<": ";
+	cin>>a;
+	w=a;
+	for(int i=1;i<=n;i++){
+		cout<<"Podaj wsp. przy x^"<<n-i<<": ";
+		cin>>a;
+		w = w*x+a;
+	}
+	return w;
+}
+int hornetR(int N,int n,int x){
+	int a;
+	cout<<"Podaj wsp przy x^"N-n<<": ";
+	cin<<a;
+	if(n==0)
+		return a;
+	else
+		return hornetR(N-n-1,x)*x+a;
+}
+int main(){
+	int n,x;
+	cout<<"Podaj stopien wilomianu: ";
+	cin>>n;
+	cout<<"Podaj argument: ";
+	cin>>x;
+	cout<<"Wynik iteracyjne: "<<hornetI(n,x)<<endl;
+	
+	return 0;
+}
+
+/////////////////////
+
+def potega(a,b)
+	return a**b
+	
+print(potega(10,10))
+
+////////////////////////
+def nwd_i(a, b):
+    while b:
+        a, b = b, a%b
+    return a
+print (nwd_i(2,2))
+
+//////////////////
+
+def gcdExtended(a, b):
+    if a == 0:
+        return b, 0, 1
+    gcd, x1, y1 = gcdExtended(b % a, a)
+    x = y1 - (b // a) * x1
+    y = x1
+    return (gcd, x, y)
+a, b = 35, 15
+data = gcdExtended(a, b)
+print(f"gcd {a} , {b} , = {data[0]} ")
+
+
+
+
+
