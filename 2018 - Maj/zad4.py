@@ -1,14 +1,13 @@
 import math
 with open('sygnaly.txt','r') as plik:
     wiersze = plik.read().splitlines()
-    odpowiedz =''
+    odpowiedz = ''
     for i in range(39,len(wiersze),40):
         odpowiedz += wiersze[i][9]
-    with open('wyniki4.txt', 'w')as plik2:
+    with open('wyniki4.txt', 'w') as plik2:
         plik2.write('Zadanie 4.1\n\n\n')
         plik2.write(odpowiedz)
         plik2.write('\n\n\n\n')
-
 
 with open("sygnaly.txt") as file:
     lista = file.read().splitlines()

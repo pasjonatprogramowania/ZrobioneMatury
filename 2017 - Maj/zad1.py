@@ -1,10 +1,14 @@
-import math
+# import math
 # with open('dane.txt','r') as plik:
 #     wiersze = plik.read().splitlines()
 #     komurki = []
 #     for w in wiersze:
 #         komurki += w.split()
-#     war = list(map(int,komurki))
+#     war = []
+#     for i in komurki:
+#         war.append(int(i))
+#
+#     # war = list(map(int,komurki))
 #     print(min(war))
 #     print(max(war))
 #     with open('wyniki6.txt','w') as plik2:
@@ -23,22 +27,21 @@ import math
 #     with open('wyniki6.txt','a') as plik2:
 #         plik2.write(f"zad 6.2 \n\n\n\n {wierszeDoUsunacia} \n")
 #
-
-# with open('przyklad.txt','r') as plik:
-#     wiersze = plik.read().splitlines()
-#     dane = []
-#     kontrastujace = 0
-#     for w in wiersze:
-#         dane.append(w.rsplit())
-#     for y in range(len(dane) - 1):
-#         for x in range(len(dane[y]) - 1):
-#             a = int(dane[y][x])
-#             b = int(dane[y][x + 1])
-#             c = int(dane[y + 1][x])
-#         if abs(a - b) > 128 or abs(a - c) > 128:
-#             kontrastujace += 1
-#     print(kontrastujace)
-
+# # with open('przyklad.txt','r') as plik:
+# #     wiersze = plik.read().splitlines()
+# #     dane = []
+# #     kontrastujace = 0
+# #     for w in wiersze:
+# #         dane.append(w.rsplit())
+# #     for y in range(len(dane) - 1):
+# #         for x in range(len(dane[y]) - 1):
+# #             a = int(dane[y][x])
+# #             b = int(dane[y][x + 1])
+# #             c = int(dane[y + 1][x])
+# #         if abs(a - b) > 128 or abs(a - c) > 128:
+# #             kontrastujace += 1
+# #     print(kontrastujace)
+#
 # def nearContrasting(x, y, all):
 #     if x != 0:
 #         if abs(all[x][y] - all[x - 1][y]) > 128:
@@ -65,27 +68,27 @@ import math
 #         if nearContrasting(i, j, all):
 #             contrasting += 1
 # print("Punktów kontrastujących: " + str(contrasting))
-
-# with open('przyklad.txt','r') as plik:
-#     wiersze = plik.read().splitlines()
-#     dane = []
-#     pomciag = 1
-#     ciag = 1
-#     for w in wiersze:
-#         dane = w.split()
-#         for i in range(len(dane)-1):
-#             a = dane[i]
-#             b = dane[i+1]
-#             if a == b:
-#                 pomciag += 1
-#             elif pomciag > ciag:
-#                 ciag = pomciag
-#                 pomciag = 1
-#             else:
-#                 pomciag = 1
-#         if pomciag > ciag:
-#             ciag = pomciag
-#             pomciag = 1
-#         pomciag = 1
-#     print(ciag)
 #
+# # with open('przyklad.txt','r') as plik:
+# #     wiersze = plik.read().splitlines()
+# #     dane = []
+# #     pomciag = 1
+# #     ciag = 1
+# #     for w in wiersze:
+# #         dane = w.split()
+# #         for i in range(len(dane)-1):
+# #             a = dane[i]
+# #             b = dane[i+1]
+# #             if a == b:
+# #                 pomciag += 1
+# #             elif pomciag > ciag:
+# #                 ciag = pomciag
+# #                 pomciag = 1
+# #             else:
+# #                 pomciag = 1
+# #         if pomciag > ciag:
+# #             ciag = pomciag
+# #             pomciag = 1
+# #         pomciag = 1
+# #     print(ciag)
+# #
